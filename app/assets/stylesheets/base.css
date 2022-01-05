@@ -13,8 +13,7 @@
   --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
-  /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
-  --base-fontsize: 1.15rem;
+  --base-fontsize: 1rem;
 
   /* Major third scale progression - see https://type-scale.com/ */
   --header-scale: 1.25;
@@ -68,12 +67,6 @@
   margin: 0;
 }
 
-/* Allow percentage-based heights in the application */
-html,
-body {
-  height: 100%;
-}
-
 /* Set the font globally */
 html {
   font-family: var(--sans-font);
@@ -84,7 +77,6 @@ body {
   background: var(--bg);
   font-size: var(--base-fontsize);
   line-height: var(--line-height);
-  -webkit-font-smoothing: antialiased;
 }
 
 /* Improve media defaults */
@@ -145,4 +137,13 @@ h5 {
 h6 {
   font-size: calc(var(--base-fontsize) / var(--header-scale));
   margin-top: calc(var(--line-height) * 1.5rem);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

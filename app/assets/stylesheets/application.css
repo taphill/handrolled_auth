@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+header {
+  background: var(--accent-bg);
+  padding: 24px;
+}
+
+main {
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 45rem;
+  padding: 0 8px;
+  /* overflow-x: hidden; */
+  /* word-break: break-word; */
+  /* overflow-wrap: break-word; */
+}
+
+footer {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 64px;
+  padding: 24px 16px;
+  color: var(--text-light);
+  font-size: .9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
