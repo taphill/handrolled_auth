@@ -12,6 +12,7 @@ RSpec.describe 'Visitor can create an account', type: :feature do
 
       fill_in :user_username, with: username
       fill_in :user_password, with: password
+      fill_in :user_password_confirmation, with: password
 
       click_button 'Create Account'
 
@@ -28,6 +29,7 @@ RSpec.describe 'Visitor can create an account', type: :feature do
 
       fill_in :user_username, with: username
       fill_in :user_password, with: password
+      fill_in :user_password_confirmation, with: password
 
       click_button 'Create Account'
 
