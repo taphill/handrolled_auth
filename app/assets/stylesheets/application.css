@@ -37,13 +37,13 @@ header {
 main {
   background: var(--bg);
   width: 100%;
+  padding: 64px 0;
 }
 
 footer {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 64px;
   padding: 24px 16px;
   color: var(--text-light);
   font-size: 0.9rem;

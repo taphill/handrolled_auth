@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  def show; end
-
   def new
     @user = User.new
   end
@@ -14,7 +12,7 @@ class UsersController < ApplicationController
       session[:current_user_id] = @user.id
       render :show
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 

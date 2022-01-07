@@ -202,6 +202,11 @@ input[type="radio"]:enabled:hover {
 }
 
 /* Format forms */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 textarea,
 select,
 input {
