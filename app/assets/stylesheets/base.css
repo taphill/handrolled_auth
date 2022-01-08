@@ -35,6 +35,7 @@
   --preformatted: #444;
   --marked: #ffdd33;
   --disabled: #efefef;
+  --error: #cc0000;
 }
 
 /* Dark theme */
@@ -50,6 +51,7 @@
     --code: #f06292;
     --preformatted: #ccc;
     --disabled: #111;
+    --error: #cc0000;
   }
 
   img,

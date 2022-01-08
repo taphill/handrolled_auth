@@ -1,12 +1,10 @@
 <div class="max-width-wrapper">
   <turbo-frame id='new_user'>
     <% if @user.errors.any? %>
-      <%=
-        render(
-          partial: 'shared/form_errors',
-          locals: { errors: @user.errors.uniq.map(&:full_message) }
-        )
-      %>
+      <form-errors
+        errors="<%= @user.errors.uniq.map(&:full_message) %>"
+      >
+      </form-errors>
     <% end %>
     <%= render 'create_account_form' %>
   </turbo-frame>
